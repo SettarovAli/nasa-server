@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
+    "test": "jest",
+    "test-watch": "jest --watch",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
@@ -17,8 +19,10 @@
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.1.1",
     "nodemon": "^2.0.16",
-    "prettier": "^2.7.0"
+    "prettier": "^2.7.0",
+    "supertest": "^6.2.3"
   },
   "dependencies": {
     "cors": "^2.8.5",
